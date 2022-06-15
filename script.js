@@ -52,7 +52,7 @@ function populateTable(cars) {
     const editButton = document.createElement("button");
     editButton.innerText = "Edit";
     editButton.addEventListener("click", () => {
-      console.log("edit");
+      window.location.href = 'pages/edit.html?id=' + car.id;
     });
 
     actions.append(deleteButton, editButton);
